@@ -20,9 +20,15 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 
   @font-face {
-    font-family:'Font_113590003';
-    src: url(https://joshbochuan.github.io/ai2026s/hw2/113590003.woff2); 
+    font-family:'CircleFont';
+    src: url(https://circle472.github.io/ct2022s/hw04/CircleFont_v2.woff2); 
   }
+
+  @font-face {
+    font-family:'Font113590003';
+    src: url(./113590003.woff2); 
+  }
+
 
   table {
       border-collapse: collapse;
@@ -153,8 +159,22 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      <p>相對於上一次作業，這個作業對於我和我的手輕鬆很多。但是這些提供的程式一堆問題，以下列舉：</p>
+      <p>s1_rotate_page.py: 有時候跑一半會直接報錯，大概內容是NoneType沒辦法拿來做甚麼事情。解決方法: 把會導致出問題的圖片，手動放到結果資料夾。</p>
+      <p>s2_crop_page.py: 偵測框框會偵測到QRcode。解決方法: 把qr_size中的0.12調高到0.15。</p>
+      <p>s2_crop_page.py: 偵測出的框框順序錯誤導致檔名錯誤。解決方法: 讓claude把整個排序邏輯重寫。</p>
+      <p>我從中午開始弄然後現在晚上八點了，我上個作業都沒花八個小時，這到底是甚麼鬼</p>
     </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+
+  <div class="col-md-12 twenty">
+    <span>字體檔位置連結：授權至SIL開源字型</span>
+    <br>
+    <button type="button" onclick="location.href='https://github.com/joshbochuan/ai2026s/blob/main/hw02/113590003.ttf'">
+      前往查看字型
+    </button>
   </div>
 
   <!-- ------------------------------------------------>
@@ -171,20 +191,20 @@
           <td rowspan="4" id="myTotal"></td>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -194,7 +214,7 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
+  <div class="row hw12 bottomrow" style="font-family: 'Font113590003';">
     <div class="col-md-12 twenty">
       <p>1. 千字文</p>
       <p>天地玄黃 宇宙洪荒 日月盈昃 辰宿列張 寒來暑往 秋收冬藏 閏餘成歲 律呂調陽 雲騰致雨 露結為霜</p>
